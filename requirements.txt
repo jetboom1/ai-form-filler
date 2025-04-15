@@ -1,0 +1,25 @@
+# Core dependencies
+flask==2.3.3
+flask-cors==4.0.0
+langchain>=0.1.0
+langchain-community>=0.0.13
+werkzeug==2.3.7
+
+# Document loaders
+unstructured>=0.10.30
+python-docx>=1.0.1
+python-pptx>=0.6.21
+openpyxl>=3.1.2
+PyPDF2>=3.0.1
+pandas>=2.2.0
+
+# Vector database
+chromadb>=0.4.18
+
+# Embeddings
+sentence-transformers>=2.2.2
+torch>=2.3.0
+transformers>=4.35.0
+
+# LLM integration
+langchain-ollama>=0.3.0

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>AI Form Filler</title>
+  <style>
+    body {
+      width: 320px;
+      padding: 15px;
+      font-family: Arial, sans-serif;
+    }
+    .header {
+      font-weight: bold;
+      margin-bottom: 15px;
+    }
+    .section {
+      margin-bottom: 15px;
+    }
+    button {
+      background-color: #4285f4;
+      color: white;
+      border: none;
+      padding: 8px 16px;
+      border-radius: 4px;
+      cursor: pointer;
+      margin-bottom: 10px;
+      width: 100%;
+    }
+    button:hover {
+      background-color: #3367d6;
+    }
+    input, textarea {
+      width: 100%;
+      margin-bottom: 8px;
+      box-sizing: border-box;
+    }
+    .status {
+      font-style: italic;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">AI Form Filler</div>
+  
+  <div class="section">
+    <button id="detectForm">Detect Form on Page</button>
+    <button id="fillForm">Fill Form with AI</button>
+    <div id="formStatus" class="status"></div>
+  </div>
+  
+  <div class="section">
+    <div>Add your data:</div>
+    <textarea id="userText" placeholder="Paste your text data here..." rows="4"></textarea>
+    <button id="addText">Add Text Data</button>
+    <input type="file" id="userFile" accept=".pdf,.doc,.docx,.txt,.csv,.ppt,.pptx,.xls,.xlsx">
+    <button id="uploadFile">Upload File</button>
+    <div id="uploadStatus" class="status"></div>
+  </div>
+  
+  <div class="section">
+    <button id="clearData">Clear My Data</button>
+  </div>
+  
+  <script src="popup.js"></script>
+</body>
+</html>
